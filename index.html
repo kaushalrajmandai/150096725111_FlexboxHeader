@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexbox Header</title>
+<title>FlexDash</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">FlexDash</div>
+<div class="dashboard">
 
-  <nav class="nav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
+  <aside class="sidebar">
+    <div class="logo">FlexDash</div>
+    <nav class="side-nav">
+      <a href="#">Dashboard</a>
+      <a href="#">Analytics</a>
+      <a href="#">Users</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
 
-  <button class="btn">Get Started</button>
-</header>
+  <main class="main">
+
+    <header class="topbar">
+      <input type="text" placeholder="Search dashboard..." class="search">
+      <div class="admin">Admin</div>
+    </header>
+
+    <section class="metrics">
+      <div class="metric-card">
+        <div class="label">Users</div>
+        <div class="value">1,240</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="label">Revenue</div>
+        <div class="value">₹2.4L</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="label">Orders</div>
+        <div class="value">320</div>
+      </div>
+    </section>
+
+    <section class="bars">
+      <div class="bar growth">
+        <div>Growth</div>
+        <div>+18%</div>
+      </div>
+
+      <div class="bar conversion">
+        <div>Conversion</div>
+        <div>5.4%</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  © 2026 Flexbox Dashboard — Student Practical Task
+</footer>
+
 </body>
 </html>
